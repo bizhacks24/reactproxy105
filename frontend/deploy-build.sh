@@ -15,7 +15,7 @@ echo ""
 
 #scp -r ./client/build/* root@62.72.29.245:/var/www/lockheedhr/
 
-scp -r build/* root@62.72.29.245:/var/www/reactloyproxy
+scp -r build/* root@62.72.29.245:/var/www/reactproxy
 
 
 
