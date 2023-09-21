@@ -1,0 +1,35 @@
+echo "Switching to branch master ..."
+echo ""
+echo ""
+
+git checkout master
+
+echo "Start Building the App now..., thru npm run build ..."
+
+#npm run build --prefix ./client/
+npm run build  ./
+
+echo "Deploying build files to VPS SERVER"
+echo ""
+echo ""
+
+echo "Deployed has beed done .... "
+#scp -r ./client/build/* root@62.72.29.245:/var/www/lockheedhr/
+
+#scp -r build/* root@62.72.29.245:/var/www/reactproxy
+
+echo "Copying all files to VPS SERVER"
+echo ""
+echo ""
+
+
+scp -r C:/Users/ADMIN/reactproxy/* root@62.72.29.245:/var/www/reactproxy
+
+
+
+echo ""
+echo ""
+echo "All Done!"
+
+
+
